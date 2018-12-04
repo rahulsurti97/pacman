@@ -63,7 +63,7 @@ module pacman_top_level(
     // Interface between NIOS II and EZ-OTG chip
     hpi_io_intf hpi_io_inst(
                             .Clk(Clk),
-                            .Reset(Reset_h),
+                            .Reset(1'b0),
                             // signals connected to NIOS II
                             .from_sw_address(hpi_addr),
                             .from_sw_data_in(hpi_data_in),

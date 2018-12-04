@@ -1,3 +1,7 @@
-Lab8_provided/db/*
-Lab8_provided/incremental_db/*
-Lab8_provided/output_files/*
+quartus/db/*
+quartus/incremental_db/*
+quartus/output_files/*
+software/usb_kb/.settings/*
+software/usb_kb/obj/*
+software/usb_kb_bsp/obj/*
+software/.metadata/*

@@ -1,0 +1,248 @@
+!SESSION 2018-10-23 21:08:41.415 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2018-10-23 21:09:14.152
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 1.100.0.v20160217-0435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-10-23 21:09:41.091
+!MESSAGE Indexed 'usb_kb' (3 sources, 44 headers) in 3.59 sec: 2,038 declarations; 3,865 references; 9 unresolved inclusions; 0 syntax errors; 51 unresolved names (0.86%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-10-23 21:09:48.460
+!MESSAGE Indexed 'usb_kb_bsp' (80 sources, 150 headers) in 6.09 sec: 5,237 declarations; 8,374 references; 1 unresolved inclusions; 2 syntax errors; 9 unresolved names (0.066%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:12:27.433
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:12:30.291
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:13:32.352
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:13:34.191
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:13:36.360
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:36:59.258
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:37:02.962
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+!SESSION 2018-10-23 21:48:19.303 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-23 21:48:46.249
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:50:52.519
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:50:55.828
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+!SESSION 2018-10-23 21:51:55.130 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-23 21:51:58.417
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:58:01.046
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:58:03.981
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 21:59:58.005
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 22:00:00.717
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+!SESSION 2018-10-23 22:17:17.114 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 22:23:14.462
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 22:23:17.892
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 22:26:32.251
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 22:26:34.622
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+!SESSION 2018-10-23 23:22:35.008 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-23 23:22:39.690
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:24:55.240
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:24:58.437
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:27:23.242
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:27:25.643
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:29:24.123
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:29:26.523
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:29:49.185
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:29:49.897
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:29:51.815
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:33:48.583
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:33:53.197
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:39:11.305
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:39:14.641
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:49:47.847
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:49:50.700
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:51:18.862
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540352566]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-23 23:51:21.209
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540352566 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 01:16:54.907
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 01:16:57.264
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 01:21:22.993
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 01:21:25.831
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 01:35:40.902
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 01:35:43.284
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+!SESSION 2018-10-24 18:29:35.831 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 18:31:14.631
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 18:31:17.002
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 19:05:52.394
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 19:05:54.782
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 19:59:24.240
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-24 19:59:27.111
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+!SESSION 2018-10-25 11:24:15.280 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-25 11:25:52.788
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-25 11:25:55.517
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-25 11:44:42.038
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540360903]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-25 11:44:44.772
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540360903 /cygdrive/j/ece385/lab8/software/usb_kb/usb_kb.elf]

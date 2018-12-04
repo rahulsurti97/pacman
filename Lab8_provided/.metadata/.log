@@ -1,0 +1,58 @@
+!SESSION 2018-10-22 22:47:33.842 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-10-22 22:50:34.056
+!MESSAGE Indexed 'usb_kb_bsp' (80 sources, 152 headers) in 10.2 sec: 5,382 declarations; 8,454 references; 56 unresolved inclusions; 3 syntax errors; 121 unresolved names (0.87%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-10-22 22:50:44.071
+!MESSAGE Indexed 'usb_kb' (0 sources, 0 headers) in 0.005 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-22 23:25:36.496
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:25:37.026
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540263754]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:25:38.843
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540263754 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:26:21.039
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-22 23:26:21.741
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:26:21.748
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540263754]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:26:23.641
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540263754 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:26:32.832
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-22 23:26:33.518
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:26:33.525
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540263754]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:26:35.349
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540263754 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:49:40.007
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-22 23:49:41.286
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:49:41.293
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb0 --id=0x0 --timestamp=1540269224]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-22 23:49:43.147
+!MESSAGE Executing: [C:/intelfpga_lite/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb0 --id=0x0 --timestamp=1540269224 /cygdrive/f/ece385/lab8/software/usb_kb/usb_kb.elf]

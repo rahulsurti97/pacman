@@ -821,3 +821,534 @@ Info: Building ../usb_kb_bsp/
 C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
 [BSP build complete]
 [usb_kb build complete]
+16:02:02 **** Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:02:04 **** Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:02:07 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:03:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:14:03 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:14:05 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:14:13 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:14:14 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:14:52 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:18:57 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:18:59 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:19:26 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+03:43:18 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:22:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:22:57 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+04:23:01 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:23:44 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:40:57 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:40:59 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+04:41:01 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:46:07 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+04:46:08 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+04:46:50 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+12:57:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+12:57:34 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+12:58:00 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+13:28:17 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+13:28:19 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+13:28:21 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+13:28:46 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:26:57 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:26:59 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+14:27:01 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:27:32 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:28:16 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:35:30 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:35:32 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:35:34 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:35:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:36:21 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:46:59 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:47:01 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:47:03 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:54:44 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:54:45 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:54:47 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:59:28 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:59:30 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:59:32 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:59:52 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:00:12 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:09:58 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:10:00 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:10:04 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:10:05 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:10:27 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:27:41 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:27:43 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:27:45 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:39:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:39:34 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:39:44 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:46:29 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:46:30 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:46:32 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:54:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:55:03 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:55:05 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:55:11 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:55:35 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:55:56 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:15:59 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:29:42 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:30:06 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:36:50 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:37:11 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+20:48:46 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:05:08 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:05:09 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:05:12 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:15:10 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:15:45 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:16:26 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:16:28 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:16:30 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:21:30 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:26:50 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:26:53 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:26:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:27:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:27:59 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:29:58 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:36:25 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:42:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:55:05 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:55:37 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:05:43 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:05:44 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:05:46 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:09:23 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]

@@ -95,7 +95,7 @@ module pacman_top_level(
                              .sdram_wire_ras_n(DRAM_RAS_N),
                              .sdram_wire_we_n(DRAM_WE_N), 
                              .sdram_clk_clk(DRAM_CLK),
-                             .keycode_export(keycode),  
+                             .keycode_export(keycode),
                              .otg_hpi_address_export(hpi_addr),
                              .otg_hpi_data_in_port(hpi_data_in),
                              .otg_hpi_data_out_port(hpi_data_out),
@@ -106,8 +106,12 @@ module pacman_top_level(
     );
 	 
 	 logic [9:0] vga_x, vga_y;
-	 logic is_ball;
-    
+	 logic [9:0] pacman_x, pacman_y;
+	 logic is_wall, is_pellet;
+    logic [2:0]	direction;
+	 logic [3:0] adjacent_walls;
+	 
+
     // Use PLL to generate the 25MHZ VGA_CLK.
     // You will have to generate it on your own in simulation.
     vga_clk vga_clk_instance(.inclk0(Clk), .c0(VGA_CLK));
@@ -126,19 +130,56 @@ module pacman_top_level(
 	 );
     
     // Which signal should be frame_clk?
-    ball ball_instance(
+//    ball ball_instance(
+//		.Clk(Clk),
+//		.Reset(Reset_vga),
+//		.KEY(KEY),
+//		.frame_clk(VGA_VS),
+//		.DrawX(vga_x),
+//		.DrawY(vga_y),
+//		.is_ball(is_ball),
+//		.keycode(keycode)
+//	 );
+	 
+	 pacman pacman_instance(
 		.Clk(Clk),
 		.Reset(Reset_vga),
-		.KEY(KEY),
 		.frame_clk(VGA_VS),
-		.DrawX(vga_x),
-		.DrawY(vga_y),
-		.is_ball(is_ball),
-		.keycode(keycode)
+		.direction(direction),
+		.pacman_x(pacman_x), 
+		.pacman_y(pacman_y)
+	);
+	
+	game_logic game_logic_instance(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.pacman_x(pacman_x),
+		.pacman_y(pacman_y),
+		.adjacent_walls(adjacent_walls),
+		.keyboard_direction(keycode),
+		.direction(direction)
+	);
+	 
+	 maze maze_instance(
+		.Clk(Clk),
+		.index((vga_x >> 4) + ((vga_y >> 4) * 40)),
+		.pacman_index((pacman_x >> 4) + ((pacman_y >> 4) * 40)),
+		.is_wall(is_wall),
+		.adjacent_walls(adjacent_walls)
+	 );
+	 
+	 pellets pellets_instance(
+		.Clk(Clk),
+		.index((vga_x >> 4) + ((vga_y >> 4) * 40)),
+		.is_pellet(is_pellet)
 	 );
     
     color_mapper color_instance(
-		.is_ball(is_ball),
+		.pacman_x(pacman_x),
+		.pacman_y(pacman_y),
+		.is_wall(is_wall),
+		.is_pellet(is_pellet),
+//		.adjacent_walls(adjacent_walls),
 		.DrawX(vga_x),
 		.DrawY(vga_y),
 		.VGA_R(VGA_R),

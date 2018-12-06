@@ -1,0 +1,18 @@
+module maze(
+	input [18:0] index,
+	input Clk,
+	output logic wall
+);
+
+	logic walls [0:1199]
+
+	initial begin
+		$readmemh("../misc/maze.txt");
+	end
+
+	always_ff @(posedge Clk) begin
+		wall <= walls[index];
+	end
+
+endmodule
+

@@ -1,12 +1,9 @@
-module pacman(
-	input 			Clk,
-	input 			Reset,
-	input 			frame_clk,
-	input [2:0] 	direction,
-	output[9:0]		pacman_x, pacman_y
+module ghost(
+	input 			Clk, Reset, frame_clk,
+	output[9:0]		ghost_x, ghost_y
 );
 
-	logic frame_clk_delayed, frame_clk_rising_edge;
+logic frame_clk_delayed, frame_clk_rising_edge;
 	always_ff @ (posedge Clk) begin
 		frame_clk_delayed <= frame_clk;
 		frame_clk_rising_edge <= (frame_clk == 1'b1) && (frame_clk_delayed == 1'b0);

@@ -16,7 +16,7 @@
 // color_mapper: Decide which color to be output to VGA for each pixel.
 module  color_mapper (
 	input              is_wall, is_pellet,
-//	input [3:0]		adjacent_walls,
+	input [3:0]			 adjacent_walls_vga,
    input        [9:0] DrawX, DrawY,       // Current pixel coordinates
 							 pacman_x, pacman_y,
    output logic [7:0] VGA_R, VGA_G, VGA_B // VGA RGB output
@@ -37,7 +37,34 @@ module  color_mapper (
 		if (is_wall == 1'b1) begin // blue wall
 			Red = 8'h19; 
 			Green = 8'h19;
-			Blue = 8'ha6;		
+			Blue = 8'ha6;
+	
+
+			if (DrawY[3:0] < 2 && adjacent_walls_vga[0] == 1'b0) begin //up
+				Red = 8'h00; 
+				Green = 8'h00;
+				Blue = 8'h00;
+			end
+			
+			if (DrawX[3:0] > 13 && adjacent_walls_vga[1] == 1'b0) begin //right
+				Red = 8'h00; 
+				Green = 8'h00;
+				Blue = 8'h00;
+			end
+			
+			if (DrawY[3:0] > 13 && adjacent_walls_vga[2] == 1'b0) begin //down
+				Red = 8'h00; 
+				Green = 8'h00;
+				Blue = 8'h00;
+			end
+			
+			if (DrawX[3:0] < 2 && adjacent_walls_vga[3] == 1'b0) begin //left
+				Red = 8'h00; 
+				Green = 8'h00;
+				Blue = 8'h00;
+			end
+
+	
 		end else begin
 			if (is_pellet == 1'b1) begin
 				if (DrawX[3:0] > 5 && DrawX[3:0] < 10 && DrawY[3:0] > 5 && DrawY[3:0] < 10) begin
@@ -46,34 +73,10 @@ module  color_mapper (
 					Blue = 8'hff;
 				end
 			end
-			
-//			if (DrawY[3:0] == 4'b0000 && adjacent_walls[0] == 1'b1) begin //up
-//				Red = 8'hff; 
-//				Green = 8'h00;
-//				Blue = 8'h00;
-//			end
-//			
-//			if (DrawX[3:0] == 4'b1111 && adjacent_walls[1] == 1'b1) begin //right
-//				Red = 8'hff; 
-//				Green = 8'h00;
-//				Blue = 8'h00;
-//			end
-//			
-//			if (DrawY[3:0] == 4'b1111 && adjacent_walls[2] == 1'b1) begin //down
-//				Red = 8'hff; 
-//				Green = 8'h00;
-//				Blue = 8'h00;
-//			end
-//			
-//			if (DrawX[3:0] == 4'b0000 && adjacent_walls[3] == 1'b1) begin //left
-//				Red = 8'hff; 
-//				Green = 8'h00;
-//				Blue = 8'h00;
-//			end
 		end
 		
-		if (pacman_x + 2 <= DrawX && pacman_x + 14 > DrawX && 
-		    pacman_y + 2 <= DrawY && pacman_y + 14 > DrawY) begin
+		if (pacman_x + 3 <= DrawX && pacman_x + 13 > DrawX && 
+		    pacman_y + 3 <= DrawY && pacman_y + 13 > DrawY) begin
 			Red = 8'hff;
 			Green = 8'hff;
 			Blue = 8'h00;

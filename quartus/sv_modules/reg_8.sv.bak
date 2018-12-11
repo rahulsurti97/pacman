@@ -1,0 +1,13 @@
+module reg_8 (
+	input  logic Clk, Reset, load,
+	input  logic [8:0] in,
+	output logic [8:0] out);
+					
+	always_ff @ (posedge Clk) begin
+		if (~Reset)				// clear on reset
+			out <= 8'h0;
+		else if (load)		// load input if load is enabled
+			out <= in;
+	end
+	
+endmodule

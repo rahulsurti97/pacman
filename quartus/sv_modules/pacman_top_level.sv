@@ -16,7 +16,7 @@
 module pacman_top_level(
 	input               	CLOCK_50,
 	input        [3:0]  	KEY,          //bit 0 is set up as Reset
-	output logic [6:0]  	HEX0, HEX1,
+	output logic [6:0]  	HEX0, HEX1, HEX2, HEX3,
 	// VGA Interface 
 	output logic [7:0]  	VGA_R,        //VGA Red
 								VGA_G,        //VGA Green
@@ -107,9 +107,11 @@ module pacman_top_level(
 	 
 	 logic [9:0] vga_x, vga_y;
 	 logic [9:0] pacman_x, pacman_y;
+	 logic [10:0] vga_index, pacman_index;
 	 logic is_wall, is_pellet;
     logic [2:0]	direction;
-	 logic [3:0] adjacent_walls;
+	 logic [3:0] adjacent_walls, adjacent_walls_vga;
+	 logic [15:0] score;
 	 
 
     // Use PLL to generate the 25MHZ VGA_CLK.
@@ -128,19 +130,7 @@ module pacman_top_level(
 		.DrawX(vga_x),
 		.DrawY(vga_y)
 	 );
-    
-    // Which signal should be frame_clk?
-//    ball ball_instance(
-//		.Clk(Clk),
-//		.Reset(Reset_vga),
-//		.KEY(KEY),
-//		.frame_clk(VGA_VS),
-//		.DrawX(vga_x),
-//		.DrawY(vga_y),
-//		.is_ball(is_ball),
-//		.keycode(keycode)
-//	 );
-	 
+   
 	 pacman pacman_instance(
 		.Clk(Clk),
 		.Reset(Reset_vga),
@@ -149,6 +139,15 @@ module pacman_top_level(
 		.pacman_x(pacman_x), 
 		.pacman_y(pacman_y)
 	);
+	
+//	pacman ghost_instance(
+//		.Clk(Clk),
+//		.Reset(Reset_vga),
+//		.frame_clk(VGA_VS),
+//		.direction(direction),
+//		.pacman_x(ghost_x), 
+//		.pacman_y(ghost_y)
+//	);
 	
 	game_logic game_logic_instance(
 		.Clk(Clk),
@@ -159,27 +158,51 @@ module pacman_top_level(
 		.keyboard_direction(keycode),
 		.direction(direction)
 	);
+	
+	score_reg score_reg(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.increment(seen_pellet),
+		.out(score)
+	);
+	
+	index_calculator pacman_index_calculator (
+		.x(pacman_x+7),
+		.y(pacman_y+7),
+		.index(pacman_index)
+	 );
+
+	 index_calculator vga_index_calculator (
+		.x(vga_x),
+		.y(vga_y),
+		.index(vga_index)
+	 );
 	 
 	 maze maze_instance(
 		.Clk(Clk),
-		.index((vga_x >> 4) + ((vga_y >> 4) * 40)),
-		.pacman_index((pacman_x >> 4) + ((pacman_y >> 4) * 40)),
+		.index(vga_index),
+		.pacman_index(pacman_index),
 		.is_wall(is_wall),
-		.adjacent_walls(adjacent_walls)
+		.adjacent_walls(adjacent_walls),
+		.adjacent_walls_vga(adjacent_walls_vga)
 	 );
 	 
 	 pellets pellets_instance(
 		.Clk(Clk),
-		.index((vga_x >> 4) + ((vga_y >> 4) * 40)),
-		.is_pellet(is_pellet)
+		.Reset(Reset_vga),
+		.index(vga_index),
+		.is_pellet(is_pellet),
+		.pacman_index(pacman_index),
+		.seen_pellet(seen_pellet)
 	 );
+	 
     
     color_mapper color_instance(
 		.pacman_x(pacman_x),
 		.pacman_y(pacman_y),
 		.is_wall(is_wall),
 		.is_pellet(is_pellet),
-//		.adjacent_walls(adjacent_walls),
+		.adjacent_walls_vga(adjacent_walls_vga),
 		.DrawX(vga_x),
 		.DrawY(vga_y),
 		.VGA_R(VGA_R),
@@ -187,9 +210,11 @@ module pacman_top_level(
 		.VGA_B(VGA_B),
 	 );
     
-    // Display keycode on hex display
-    HexDriver hex_inst_0 (keycode[3:0], HEX0);
-    HexDriver hex_inst_1 (keycode[7:4], HEX1);
+    // Display keycode on hex display	 
+	 HexDriver hex_inst_0 (score[3:0], HEX0);
+    HexDriver hex_inst_1 (score[7:4], HEX1);
+	 HexDriver hex_inst_2 (score[11:8], HEX2);
+    HexDriver hex_inst_3 (score[15:12], HEX3);
     
     /**************************************************************************************
         ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!

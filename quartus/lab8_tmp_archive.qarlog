@@ -1,0 +1,120 @@
+Quartus Prime Archive log --	C:/Users/rahulsurti/Desktop/pacman/quartus/lab8_tmp_archive.qarlog
+
+Archive:	C:/Users/rahulsurti/Desktop/pacman/quartus/lab8_tmp_archive.qar
+Date:		Thu Dec 13 11:35:00 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc.qsys
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc.sopcinfo
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/lab8_soc.cmp
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/lab8_soc.debuginfo
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/lab8_soc.qip
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/lab8_soc.regmap
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/lab8_soc.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_avalon_st_pipeline_base.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_default_burst_converter.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_incr_burst_converter.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_address_alignment.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_burst_adapter.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_burst_adapter_new.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_master_agent.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_master_translator.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_merlin_width_adapter.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_reset_controller.sdc
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_reset_controller.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_reset_synchronizer.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/altera_wrap_burst_converter.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_ghost_direction.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_ghost_status.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_irq_mapper.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_jtag_uart_0.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_keycode.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_avalon_st_adapter.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_avalon_st_adapter_005.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_avalon_st_adapter_005_error_adapter_0.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_cmd_demux.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_cmd_demux_001.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_cmd_mux.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_cmd_mux_001.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_router.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_router_001.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_router_002.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_router_003.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_router_007.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_rsp_demux.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_rsp_demux_001.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_rsp_mux.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_mm_interconnect_0_rsp_mux_001.sv
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu.sdc
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_ociram_default_contents.mif
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_rf_ram_a.mif
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_rf_ram_b.mif
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu_test_bench.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_onchip_memory2_0.hex
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_onchip_memory2_0.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_otg_hpi_address.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_otg_hpi_cs.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_otg_hpi_data.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_sdram.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_sdram_pll.v
+C:/Users/rahulsurti/Desktop/pacman/lab8_soc/synthesis/submodules/lab8_soc_sysid_qsys_0.v
+C:/Users/rahulsurti/Desktop/pacman/misc/maze.txt
+C:/Users/rahulsurti/Desktop/pacman/misc/maze_5bit.txt
+C:/Users/rahulsurti/Desktop/pacman/misc/pellets.txt
+C:/Users/rahulsurti/Desktop/pacman/quartus/PLLJ_PLLSPE_INFO.txt
+C:/Users/rahulsurti/Desktop/pacman/quartus/SDC1.sdc
+C:/Users/rahulsurti/Desktop/pacman/quartus/lab7_usb.qsf
+C:/Users/rahulsurti/Desktop/pacman/quartus/lab8.qpf
+C:/Users/rahulsurti/Desktop/pacman/quartus/lab8.qsf
+C:/Users/rahulsurti/Desktop/pacman/quartus/lab8_assignment_defaults.qdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/Color_Mapper.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/HexDriver.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/VGA_controller.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/ball.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/collision_detector.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/game_logic.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/ghost.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/ghost_direction_converter.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/ghost_movement_logic.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/hpi_io_intf.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/index_calculator.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/lives_reg.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/maze.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/pacman.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/pacman_top_level.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/pellets.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/reg_8.sv
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/vga_clk.ppf
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/vga_clk.qip
+C:/Users/rahulsurti/Desktop/pacman/quartus/sv_modules/vga_clk.v
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 103 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Thu Dec 13 11:35:15 2018
+Source archive file:	C:/Users/rahulsurti/Desktop/pacman/quartus/lab8_tmp_archive.qar
+Archive was extracted into	F:/rsurti2_bmchand2/
+		 - successfully.

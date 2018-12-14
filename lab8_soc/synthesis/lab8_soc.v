@@ -4,26 +4,28 @@
 
 `timescale 1 ps / 1 ps
 module lab8_soc (
-		input  wire        clk_clk,                //             clk.clk
-		output wire [7:0]  keycode_export,         //         keycode.export
-		output wire [1:0]  otg_hpi_address_export, // otg_hpi_address.export
-		output wire        otg_hpi_cs_export,      //      otg_hpi_cs.export
-		input  wire [15:0] otg_hpi_data_in_port,   //    otg_hpi_data.in_port
-		output wire [15:0] otg_hpi_data_out_port,  //                .out_port
-		output wire        otg_hpi_r_export,       //       otg_hpi_r.export
-		output wire        otg_hpi_reset_export,   //   otg_hpi_reset.export
-		output wire        otg_hpi_w_export,       //       otg_hpi_w.export
-		input  wire        reset_reset_n,          //           reset.reset_n
-		output wire        sdram_clk_clk,          //       sdram_clk.clk
-		output wire [12:0] sdram_wire_addr,        //      sdram_wire.addr
-		output wire [1:0]  sdram_wire_ba,          //                .ba
-		output wire        sdram_wire_cas_n,       //                .cas_n
-		output wire        sdram_wire_cke,         //                .cke
-		output wire        sdram_wire_cs_n,        //                .cs_n
-		inout  wire [15:0] sdram_wire_dq,          //                .dq
-		output wire [1:0]  sdram_wire_dqm,         //                .dqm
-		output wire        sdram_wire_ras_n,       //                .ras_n
-		output wire        sdram_wire_we_n         //                .we_n
+		input  wire        clk_clk,                       //                    clk.clk
+		output wire [15:0] ghost_direction_export_export, // ghost_direction_export.export
+		input  wire [15:0] ghost_status_export_export,    //    ghost_status_export.export
+		output wire [7:0]  keycode_export,                //                keycode.export
+		output wire [1:0]  otg_hpi_address_export,        //        otg_hpi_address.export
+		output wire        otg_hpi_cs_export,             //             otg_hpi_cs.export
+		input  wire [15:0] otg_hpi_data_in_port,          //           otg_hpi_data.in_port
+		output wire [15:0] otg_hpi_data_out_port,         //                       .out_port
+		output wire        otg_hpi_r_export,              //              otg_hpi_r.export
+		output wire        otg_hpi_reset_export,          //          otg_hpi_reset.export
+		output wire        otg_hpi_w_export,              //              otg_hpi_w.export
+		input  wire        reset_reset_n,                 //                  reset.reset_n
+		output wire        sdram_clk_clk,                 //              sdram_clk.clk
+		output wire [12:0] sdram_wire_addr,               //             sdram_wire.addr
+		output wire [1:0]  sdram_wire_ba,                 //                       .ba
+		output wire        sdram_wire_cas_n,              //                       .cas_n
+		output wire        sdram_wire_cke,                //                       .cke
+		output wire        sdram_wire_cs_n,               //                       .cs_n
+		inout  wire [15:0] sdram_wire_dq,                 //                       .dq
+		output wire [1:0]  sdram_wire_dqm,                //                       .dqm
+		output wire        sdram_wire_ras_n,              //                       .ras_n
+		output wire        sdram_wire_we_n                //                       .we_n
 	);
 
 	wire         sdram_pll_c0_clk;                                            // sdram_pll:c0 -> [mm_interconnect_0:sdram_pll_c0_clk, rst_controller_002:clk, sdram:clk]
@@ -112,14 +114,40 @@ module lab8_soc (
 	wire   [1:0] mm_interconnect_0_keycode_s1_address;                        // mm_interconnect_0:keycode_s1_address -> keycode:address
 	wire         mm_interconnect_0_keycode_s1_write;                          // mm_interconnect_0:keycode_s1_write -> keycode:write_n
 	wire  [31:0] mm_interconnect_0_keycode_s1_writedata;                      // mm_interconnect_0:keycode_s1_writedata -> keycode:writedata
+	wire         mm_interconnect_0_ghost_direction_s1_chipselect;             // mm_interconnect_0:ghost_direction_s1_chipselect -> ghost_direction:chipselect
+	wire  [31:0] mm_interconnect_0_ghost_direction_s1_readdata;               // ghost_direction:readdata -> mm_interconnect_0:ghost_direction_s1_readdata
+	wire   [1:0] mm_interconnect_0_ghost_direction_s1_address;                // mm_interconnect_0:ghost_direction_s1_address -> ghost_direction:address
+	wire         mm_interconnect_0_ghost_direction_s1_write;                  // mm_interconnect_0:ghost_direction_s1_write -> ghost_direction:write_n
+	wire  [31:0] mm_interconnect_0_ghost_direction_s1_writedata;              // mm_interconnect_0:ghost_direction_s1_writedata -> ghost_direction:writedata
+	wire  [31:0] mm_interconnect_0_ghost_status_s1_readdata;                  // ghost_status:readdata -> mm_interconnect_0:ghost_status_s1_readdata
+	wire   [1:0] mm_interconnect_0_ghost_status_s1_address;                   // mm_interconnect_0:ghost_status_s1_address -> ghost_status:address
 	wire         irq_mapper_receiver0_irq;                                    // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, keycode:reset_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, otg_hpi_address:reset_n, otg_hpi_cs:reset_n, otg_hpi_data:reset_n, otg_hpi_r:reset_n, otg_hpi_reset:reset_n, otg_hpi_w:reset_n, rst_translator:in_reset]
+	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [ghost_direction:reset_n, ghost_status:reset_n, irq_mapper:reset, jtag_uart_0:rst_n, keycode:reset_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, otg_hpi_address:reset_n, otg_hpi_cs:reset_n, otg_hpi_data:reset_n, otg_hpi_r:reset_n, otg_hpi_reset:reset_n, otg_hpi_w:reset_n, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_gen2_0:reset_req, rst_translator:reset_req_in]
 	wire         rst_controller_001_reset_out_reset;                          // rst_controller_001:reset_out -> [mm_interconnect_0:sysid_qsys_0_reset_reset_bridge_in_reset_reset, onchip_memory2_0:reset, rst_translator_001:in_reset, sdram_pll:reset, sysid_qsys_0:reset_n]
 	wire         rst_controller_001_reset_out_reset_req;                      // rst_controller_001:reset_req -> [onchip_memory2_0:reset_req, rst_translator_001:reset_req_in]
 	wire         nios2_gen2_0_debug_reset_request_reset;                      // nios2_gen2_0:debug_reset_request -> [rst_controller_001:reset_in1, rst_controller_002:reset_in1]
 	wire         rst_controller_002_reset_out_reset;                          // rst_controller_002:reset_out -> [mm_interconnect_0:sdram_reset_reset_bridge_in_reset_reset, sdram:reset_n]
+
+	lab8_soc_ghost_direction ghost_direction (
+		.clk        (clk_clk),                                         //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),                 //               reset.reset_n
+		.address    (mm_interconnect_0_ghost_direction_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_ghost_direction_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_ghost_direction_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_ghost_direction_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_ghost_direction_s1_readdata),   //                    .readdata
+		.out_port   (ghost_direction_export_export)                    // external_connection.export
+	);
+
+	lab8_soc_ghost_status ghost_status (
+		.clk      (clk_clk),                                    //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),            //               reset.reset_n
+		.address  (mm_interconnect_0_ghost_status_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_ghost_status_s1_readdata), //                    .readdata
+		.in_port  (ghost_status_export_export)                  // external_connection.export
+	);
 
 	lab8_soc_jtag_uart_0 jtag_uart_0 (
 		.clk            (clk_clk),                                                     //               clk.clk
@@ -327,6 +355,13 @@ module lab8_soc (
 		.nios2_gen2_0_instruction_master_waitrequest    (nios2_gen2_0_instruction_master_waitrequest),                 //                                         .waitrequest
 		.nios2_gen2_0_instruction_master_read           (nios2_gen2_0_instruction_master_read),                        //                                         .read
 		.nios2_gen2_0_instruction_master_readdata       (nios2_gen2_0_instruction_master_readdata),                    //                                         .readdata
+		.ghost_direction_s1_address                     (mm_interconnect_0_ghost_direction_s1_address),                //                       ghost_direction_s1.address
+		.ghost_direction_s1_write                       (mm_interconnect_0_ghost_direction_s1_write),                  //                                         .write
+		.ghost_direction_s1_readdata                    (mm_interconnect_0_ghost_direction_s1_readdata),               //                                         .readdata
+		.ghost_direction_s1_writedata                   (mm_interconnect_0_ghost_direction_s1_writedata),              //                                         .writedata
+		.ghost_direction_s1_chipselect                  (mm_interconnect_0_ghost_direction_s1_chipselect),             //                                         .chipselect
+		.ghost_status_s1_address                        (mm_interconnect_0_ghost_status_s1_address),                   //                          ghost_status_s1.address
+		.ghost_status_s1_readdata                       (mm_interconnect_0_ghost_status_s1_readdata),                  //                                         .readdata
 		.jtag_uart_0_avalon_jtag_slave_address          (mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_address),     //            jtag_uart_0_avalon_jtag_slave.address
 		.jtag_uart_0_avalon_jtag_slave_write            (mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write),       //                                         .write
 		.jtag_uart_0_avalon_jtag_slave_read             (mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read),        //                                         .read

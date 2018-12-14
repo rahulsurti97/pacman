@@ -1,0 +1,13 @@
+module ghost_direction_converter(
+	input [15:0] ghost_direction_nios,
+	output [3:0][2:0] ghost_direction_fpga
+);
+
+always_comb
+	ghost_direction_fpga[0][2:0] = ghost_direction_nios[2:0]
+	ghost_direction_fpga[1][2:0] = ghost_direction_nios[6:4]
+	ghost_direction_fpga[2][2:0] = ghost_direction_nios[10:8]
+	ghost_direction_fpga[3][2:0] = ghost_direction_nios[14:12]
+end
+
+endmodule

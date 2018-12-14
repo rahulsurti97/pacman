@@ -1,8 +1,6 @@
 module pacman(
-	input 			Clk,
-	input 			Reset,
-	input 			frame_clk,
-	input [2:0] 	direction,
+	input 			Clk, Reset, frame_clk, Restart,
+	input [2:0] 	direction, id,
 	output[9:0]		pacman_x, pacman_y
 );
 
@@ -13,9 +11,33 @@ module pacman(
 	end
 	
 	always_ff @ (posedge Clk) begin
-		if (Reset) begin
-			pacman_x <= 10'd320;
-			pacman_y <= 10'd272;
+		if (Reset || Restart) begin
+			case(id[2:0])
+				3'b000 : begin // ghost 0
+					pacman_x <= 10'd288;
+					pacman_y <= 10'd160;
+				end
+				3'b001 : begin // ghost 1
+					pacman_x <= 10'd304;
+					pacman_y <= 10'd160;
+				end
+				3'b010 : begin // ghost 2
+					pacman_x <= 10'd320;
+					pacman_y <= 10'd160;
+				end
+				3'b011 : begin // ghost 3
+					pacman_x <= 10'd336;
+					pacman_y <= 10'd160;
+				end
+				3'b100 : begin // pacman
+					pacman_x <= 10'd304;
+					pacman_y <= 10'd288;
+				end
+				default: begin
+					pacman_x <= 10'd0;
+					pacman_y <= 10'd0;
+				end
+			endcase
 		end else begin
 			pacman_x <= pacman_x_next;
 			pacman_y <= pacman_y_next;

@@ -1,0 +1,50 @@
+Quartus Prime Archive log --	C:/Users/rahulsurti/Desktop/pacman/quartus/__lab7_usb.auto.qarlog
+
+Archive:	C:/Users/rahulsurti/Desktop/pacman/quartus/__lab7_usb.auto.qar
+Date:		Thu Dec 13 11:34:59 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/a_dpfifo_l011.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/a_fefifo_7cf.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_3761.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_5j61.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_6mc1.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_78l1.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_ac71.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_b701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_c701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_e701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_f701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_g701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_h701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_i701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_j701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_k701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_l701.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_nio1.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/altsyncram_sqg1.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/cntr_1ob.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/cntr_do7.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.cbx.xml
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.pacman_top_level0.rtl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.pacman_top_level1.rtl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.pacman_top_level2.rtl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.pacman_top_level3.rtl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.pacman_top_level4.rtl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.pacman_top_level5.rtl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.qpf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.ram0_maze_3ddc11.hdl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/lab8.ram0_pellets_4a62cf0.hdl.mif
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/mult_p5t.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/scfifo_jr21.tdf
+C:/Users/rahulsurti/Desktop/pacman/quartus/db/vga_clk_altpll.v
+PLLJ_PLLSPE_INFO.txt
+SDC1.sdc
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+lab7_usb.qsf
+lab8_assignment_defaults.qdf
+	======= Total: 39 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

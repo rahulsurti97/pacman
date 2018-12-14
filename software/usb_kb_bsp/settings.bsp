@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 9, 2018 7:48:00 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1544406480493</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 12, 2018 5:43:20 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1544658200497</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\rahulsurti\Desktop\pacman\software\usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\lab8_soc.sopcinfo</SopcDesignFile>
@@ -905,64 +905,76 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>keycode</slaveDescriptor>
+                <slaveDescriptor>ghost_status</slaveDescriptor>
                 <addressRange>0x00000020 - 0x0000002F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>otg_hpi_reset</slaveDescriptor>
+                <slaveDescriptor>ghost_direction</slaveDescriptor>
                 <addressRange>0x00000030 - 0x0000003F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>otg_hpi_cs</slaveDescriptor>
+                <slaveDescriptor>keycode</slaveDescriptor>
                 <addressRange>0x00000040 - 0x0000004F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>otg_hpi_w</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_reset</slaveDescriptor>
                 <addressRange>0x00000050 - 0x0000005F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>otg_hpi_r</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_cs</slaveDescriptor>
                 <addressRange>0x00000060 - 0x0000006F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>otg_hpi_data</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_w</slaveDescriptor>
                 <addressRange>0x00000070 - 0x0000007F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>otg_hpi_address</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_r</slaveDescriptor>
                 <addressRange>0x00000080 - 0x0000008F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sdram_pll</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_data</slaveDescriptor>
                 <addressRange>0x00000090 - 0x0000009F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x000000A8 - 0x000000AF</addressRange>
-                <addressSpan>8</addressSpan>
-                <attributes>printable</attributes>
+                <slaveDescriptor>otg_hpi_address</slaveDescriptor>
+                <addressRange>0x000000A0 - 0x000000AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sdram_pll</slaveDescriptor>
+                <addressRange>0x000000B0 - 0x000000BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x000000B0 - 0x000000B7</addressRange>
+                <addressRange>0x000000C8 - 0x000000CF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>jtag_uart_0</slaveDescriptor>
+                <addressRange>0x000000D0 - 0x000000D7</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sdram</slaveDescriptor>

@@ -1,5 +1,5 @@
 module pellets(
-	input Clk, Reset,
+	input Clk, Reset, Reset_game,
 	input [10:0] index, pacman_index,
 	output logic is_pellet, seen_pellet
 );
@@ -14,7 +14,7 @@ module pellets(
 	
 
 	always_ff @(posedge Clk) begin
-		if (Reset) begin
+		if (Reset | Reset_game) begin
 			$readmemb("../misc/pellets.txt", pellets);
 			seen_pellet <= 1'b0;
 		end else begin

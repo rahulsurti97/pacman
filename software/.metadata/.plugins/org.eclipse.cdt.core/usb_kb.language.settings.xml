@@ -1396,7 +1396,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1436,7 +1438,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1532,7 +1536,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1544,7 +1550,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1570,7 +1578,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1582,7 +1592,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1608,7 +1620,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1648,7 +1662,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1688,7 +1704,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1784,7 +1802,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1824,7 +1844,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1906,7 +1928,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1946,7 +1970,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2042,7 +2068,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2054,7 +2082,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2094,7 +2124,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2106,7 +2138,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2202,7 +2236,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2256,7 +2292,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2268,7 +2306,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2322,7 +2362,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2334,7 +2376,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2346,7 +2390,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2358,7 +2404,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2370,7 +2418,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2382,7 +2432,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2394,7 +2446,9 @@
 						<entry kind="includePath" name="/usb_kb_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="C:/ece385/lab8/software/usb_kb_bsp"/>
+						<entry kind="includePath" name="/usb_kb_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/usb_kb_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

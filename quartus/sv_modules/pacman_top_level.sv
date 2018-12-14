@@ -16,7 +16,7 @@
 module pacman_top_level(
 	input               	CLOCK_50,
 	input        [3:0]  	KEY,          //bit 0 is set up as Reset
-	output logic [6:0]  	HEX0, HEX1, HEX2, HEX3,
+	output logic [6:0]  	HEX0, HEX1, HEX2, HEX3, HEX4,
 	// VGA Interface 
 	output logic [7:0]  	VGA_R,        //VGA Red
 								VGA_G,        //VGA Green
@@ -47,13 +47,13 @@ module pacman_top_level(
 								DRAM_CLK      //SDRAM Clock
 );
     
-    logic Reset_h, Clk, Reset_vga;
+    logic Reset_h, Clk, Reset_vga, Restart, Reset_game;
     logic [7:0] keycode;
     
     assign Clk = CLOCK_50;
     always_ff @ (posedge Clk) begin
         Reset_h <= ~(KEY[0]);        // The push buttons are active low
-        Reset_vga <= ~(KEY[1]);        // The push buttons are active low
+        Reset_vga <=  ~(KEY[1]);        // The push buttons are active low
     end
     
     logic [1:0] hpi_addr;
@@ -96,6 +96,8 @@ module pacman_top_level(
                              .sdram_wire_we_n(DRAM_WE_N), 
                              .sdram_clk_clk(DRAM_CLK),
                              .keycode_export(keycode),
+									  .ghost_direction_export_export(ghost_direction_export),
+									  .ghost_status_export_export(ghost_status),
                              .otg_hpi_address_export(hpi_addr),
                              .otg_hpi_data_in_port(hpi_data_in),
                              .otg_hpi_data_out_port(hpi_data_out),
@@ -105,6 +107,17 @@ module pacman_top_level(
                              .otg_hpi_reset_export(hpi_reset)
     );
 	 
+	ghost_direction_reader reader(
+		.ghost_direction_nios(ghost_direction_export),
+		.ghost_direction_fpga(direction_ghost_next)
+	);
+	
+	ghost_direction_writer writer(
+		.ghost_direction_fpga(direction_ghost),
+		.ghost_direction_nios(ghost_status)
+	);
+	 
+	 
 	 logic [9:0] vga_x, vga_y;
 	 logic [9:0] pacman_x, pacman_y;
 	 logic [10:0] vga_index, pacman_index;
@@ -112,7 +125,16 @@ module pacman_top_level(
     logic [2:0]	direction;
 	 logic [3:0] adjacent_walls, adjacent_walls_vga;
 	 logic [15:0] score;
+	 logic [15:0] ghost_direction_export, ghost_status;
 	 
+	 logic [3:0][9:0] ghost_x;
+	 logic [3:0][9:0] ghost_y;
+	 logic [3:0][10:0] ghost_index;
+	 logic [3:0][2:0] direction_ghost, direction_ghost_next;
+	 logic [3:0][3:0] adjacent_walls_ghost;
+	 
+	 logic [1:0] lives_display;
+
 
     // Use PLL to generate the 25MHZ VGA_CLK.
     // You will have to generate it on your own in simulation.
@@ -134,24 +156,62 @@ module pacman_top_level(
 	 pacman pacman_instance(
 		.Clk(Clk),
 		.Reset(Reset_vga),
+		.Restart(Restart),
 		.frame_clk(VGA_VS),
 		.direction(direction),
 		.pacman_x(pacman_x), 
-		.pacman_y(pacman_y)
+		.pacman_y(pacman_y),
+		.id(3'b100)
 	);
 	
-//	pacman ghost_instance(
-//		.Clk(Clk),
-//		.Reset(Reset_vga),
-//		.frame_clk(VGA_VS),
-//		.direction(direction),
-//		.pacman_x(ghost_x), 
-//		.pacman_y(ghost_y)
-//	);
-	
-	game_logic game_logic_instance(
+	pacman ghost_0(
 		.Clk(Clk),
 		.Reset(Reset_vga),
+		.Restart(Restart),
+		.frame_clk(VGA_VS),
+		.direction(direction_ghost[0]),
+		.pacman_x(ghost_x[0]), 
+		.pacman_y(ghost_y[0]),
+		.id(3'b000)
+	);
+	
+	pacman ghost_1(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.Restart(Restart),
+		.frame_clk(VGA_VS),
+		.direction(direction_ghost[1]),
+		.pacman_x(ghost_x[1]), 
+		.pacman_y(ghost_y[1]),
+		.id(3'b001)
+	);
+	
+	pacman ghost_2(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.Restart(Restart),
+		.frame_clk(VGA_VS),
+		.direction(direction_ghost[2]),
+		.pacman_x(ghost_x[2]), 
+		.pacman_y(ghost_y[2]),
+		.id(3'b010)
+	);
+	
+	pacman ghost_3(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.Restart(Restart),
+		.frame_clk(VGA_VS),
+		.direction(direction_ghost[3]),
+		.pacman_x(ghost_x[3]), 
+		.pacman_y(ghost_y[3]),
+		.id(3'b011)
+	);
+	
+	game_logic game_logic_pacman(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.Restart(Restart),
 		.pacman_x(pacman_x),
 		.pacman_y(pacman_y),
 		.adjacent_walls(adjacent_walls),
@@ -159,9 +219,50 @@ module pacman_top_level(
 		.direction(direction)
 	);
 	
+	ghost_movement_logic ghost0_movement(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.pacman_x(ghost_x[0]),
+		.pacman_y(ghost_y[0]),
+		.adjacent_walls(adjacent_walls_ghost[0]),
+		.direction_input(direction_ghost_next[0]),
+		.direction(direction_ghost[0])
+	);
+	
+	ghost_movement_logic ghost1_movement(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.pacman_x(ghost_x[1]),
+		.pacman_y(ghost_y[1]),
+		.adjacent_walls(adjacent_walls_ghost[1]),
+		.direction_input(direction_ghost_next[1]),
+		.direction(direction_ghost[1])
+	);
+	
+	ghost_movement_logic ghost2_movement(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.pacman_x(ghost_x[2]),
+		.pacman_y(ghost_y[2]),
+		.adjacent_walls(adjacent_walls_ghost[2]),
+		.direction_input(direction_ghost_next[2]),
+		.direction(direction_ghost[2])
+	);
+	
+	ghost_movement_logic ghost3_movement(
+		.Clk(Clk),
+		.Reset(Reset_vga),
+		.pacman_x(ghost_x[3]),
+		.pacman_y(ghost_y[3]),
+		.adjacent_walls(adjacent_walls_ghost[3]),
+		.direction_input(direction_ghost_next[3]),
+		.direction(direction_ghost[3])
+	);
+	
 	score_reg score_reg(
 		.Clk(Clk),
 		.Reset(Reset_vga),
+		.Reset_game(Reset_game),
 		.increment(seen_pellet),
 		.out(score)
 	);
@@ -170,6 +271,30 @@ module pacman_top_level(
 		.x(pacman_x+7),
 		.y(pacman_y+7),
 		.index(pacman_index)
+	 );
+	 
+	 index_calculator ghost0_index_calculator (
+		.x(ghost_x[0]+7),
+		.y(ghost_y[0]+7),
+		.index(ghost_index[0])
+	 );
+	 
+	 index_calculator ghost1_index_calculator (
+		.x(ghost_x[1]+7),
+		.y(ghost_y[1]+7),
+		.index(ghost_index[1])
+	 );
+	 
+	 index_calculator ghost2_index_calculator (
+		.x(ghost_x[2]+7),
+		.y(ghost_y[2]+7),
+		.index(ghost_index[2])
+	 );
+	 
+	 index_calculator ghost3_index_calculator (
+		.x(ghost_x[3]+7),
+		.y(ghost_y[3]+7),
+		.index(ghost_index[3])
 	 );
 
 	 index_calculator vga_index_calculator (
@@ -182,24 +307,43 @@ module pacman_top_level(
 		.Clk(Clk),
 		.index(vga_index),
 		.pacman_index(pacman_index),
+		.ghost_index(ghost_index),
 		.is_wall(is_wall),
 		.adjacent_walls(adjacent_walls),
-		.adjacent_walls_vga(adjacent_walls_vga)
-	 );
+		.adjacent_walls_vga(adjacent_walls_vga),
+		.adjacent_walls_ghost(adjacent_walls_ghost)
+		);
 	 
 	 pellets pellets_instance(
 		.Clk(Clk),
 		.Reset(Reset_vga),
+		.Reset_game(Reset_game),
 		.index(vga_index),
 		.is_pellet(is_pellet),
 		.pacman_index(pacman_index),
 		.seen_pellet(seen_pellet)
 	 );
 	 
-    
+	 
+	 collision_detector collision_detector_instance( 
+		.pacman_index(pacman_index),
+		.ghost_index(ghost_index),
+		.Restart(Restart)
+	);
+	
+	lives_reg lives(
+		.Clk(Clk), 
+		.Reset(Reset_vga), 
+		.Restart(Restart),
+		.out(lives_display),
+		.Reset_game(Reset_game)
+	);
+	
     color_mapper color_instance(
 		.pacman_x(pacman_x),
 		.pacman_y(pacman_y),
+		.ghost_x(ghost_x),
+		.ghost_y(ghost_y),
 		.is_wall(is_wall),
 		.is_pellet(is_pellet),
 		.adjacent_walls_vga(adjacent_walls_vga),
@@ -215,6 +359,8 @@ module pacman_top_level(
     HexDriver hex_inst_1 (score[7:4], HEX1);
 	 HexDriver hex_inst_2 (score[11:8], HEX2);
     HexDriver hex_inst_3 (score[15:12], HEX3);
+	 
+	 HexDriver hex_inst_4 ({2'b0, lives_display[1:0]}, HEX4);
     
     /**************************************************************************************
         ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!

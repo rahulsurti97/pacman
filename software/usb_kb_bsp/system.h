@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'lab8_soc'
  * SOPC Builder design path: ../../lab8_soc.sopcinfo
  *
- * Generated: Tue Dec 04 13:07:54 CST 2018
+ * Generated: Wed Dec 12 15:15:27 CST 2018
  */
 
 /*
@@ -158,24 +158,78 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0xa8
+#define ALT_STDERR_BASE 0xd0
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0xa8
+#define ALT_STDIN_BASE 0xd0
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0xa8
+#define ALT_STDOUT_BASE 0xd0
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
 #define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
 #define ALT_SYSTEM_NAME "lab8_soc"
+
+
+/*
+ * ghost_direction configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_ghost_direction altera_avalon_pio
+#define GHOST_DIRECTION_BASE 0x30
+#define GHOST_DIRECTION_BIT_CLEARING_EDGE_REGISTER 0
+#define GHOST_DIRECTION_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define GHOST_DIRECTION_CAPTURE 0
+#define GHOST_DIRECTION_DATA_WIDTH 16
+#define GHOST_DIRECTION_DO_TEST_BENCH_WIRING 0
+#define GHOST_DIRECTION_DRIVEN_SIM_VALUE 0
+#define GHOST_DIRECTION_EDGE_TYPE "NONE"
+#define GHOST_DIRECTION_FREQ 50000000
+#define GHOST_DIRECTION_HAS_IN 0
+#define GHOST_DIRECTION_HAS_OUT 1
+#define GHOST_DIRECTION_HAS_TRI 0
+#define GHOST_DIRECTION_IRQ -1
+#define GHOST_DIRECTION_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define GHOST_DIRECTION_IRQ_TYPE "NONE"
+#define GHOST_DIRECTION_NAME "/dev/ghost_direction"
+#define GHOST_DIRECTION_RESET_VALUE 0
+#define GHOST_DIRECTION_SPAN 16
+#define GHOST_DIRECTION_TYPE "altera_avalon_pio"
+
+
+/*
+ * ghost_status configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_ghost_status altera_avalon_pio
+#define GHOST_STATUS_BASE 0x20
+#define GHOST_STATUS_BIT_CLEARING_EDGE_REGISTER 0
+#define GHOST_STATUS_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define GHOST_STATUS_CAPTURE 0
+#define GHOST_STATUS_DATA_WIDTH 16
+#define GHOST_STATUS_DO_TEST_BENCH_WIRING 0
+#define GHOST_STATUS_DRIVEN_SIM_VALUE 0
+#define GHOST_STATUS_EDGE_TYPE "NONE"
+#define GHOST_STATUS_FREQ 50000000
+#define GHOST_STATUS_HAS_IN 1
+#define GHOST_STATUS_HAS_OUT 0
+#define GHOST_STATUS_HAS_TRI 0
+#define GHOST_STATUS_IRQ -1
+#define GHOST_STATUS_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define GHOST_STATUS_IRQ_TYPE "NONE"
+#define GHOST_STATUS_NAME "/dev/ghost_status"
+#define GHOST_STATUS_RESET_VALUE 0
+#define GHOST_STATUS_SPAN 16
+#define GHOST_STATUS_TYPE "altera_avalon_pio"
 
 
 /*
@@ -195,7 +249,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0xa8
+#define JTAG_UART_0_BASE 0xd0
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -213,7 +267,7 @@
  */
 
 #define ALT_MODULE_CLASS_keycode altera_avalon_pio
-#define KEYCODE_BASE 0x20
+#define KEYCODE_BASE 0x40
 #define KEYCODE_BIT_CLEARING_EDGE_REGISTER 0
 #define KEYCODE_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define KEYCODE_CAPTURE 0
@@ -269,7 +323,7 @@
  */
 
 #define ALT_MODULE_CLASS_otg_hpi_address altera_avalon_pio
-#define OTG_HPI_ADDRESS_BASE 0x80
+#define OTG_HPI_ADDRESS_BASE 0xa0
 #define OTG_HPI_ADDRESS_BIT_CLEARING_EDGE_REGISTER 0
 #define OTG_HPI_ADDRESS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define OTG_HPI_ADDRESS_CAPTURE 0
@@ -296,7 +350,7 @@
  */
 
 #define ALT_MODULE_CLASS_otg_hpi_cs altera_avalon_pio
-#define OTG_HPI_CS_BASE 0x40
+#define OTG_HPI_CS_BASE 0x60
 #define OTG_HPI_CS_BIT_CLEARING_EDGE_REGISTER 0
 #define OTG_HPI_CS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define OTG_HPI_CS_CAPTURE 0
@@ -323,7 +377,7 @@
  */
 
 #define ALT_MODULE_CLASS_otg_hpi_data altera_avalon_pio
-#define OTG_HPI_DATA_BASE 0x70
+#define OTG_HPI_DATA_BASE 0x90
 #define OTG_HPI_DATA_BIT_CLEARING_EDGE_REGISTER 0
 #define OTG_HPI_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define OTG_HPI_DATA_CAPTURE 0
@@ -350,7 +404,7 @@
  */
 
 #define ALT_MODULE_CLASS_otg_hpi_r altera_avalon_pio
-#define OTG_HPI_R_BASE 0x60
+#define OTG_HPI_R_BASE 0x80
 #define OTG_HPI_R_BIT_CLEARING_EDGE_REGISTER 0
 #define OTG_HPI_R_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define OTG_HPI_R_CAPTURE 0
@@ -377,7 +431,7 @@
  */
 
 #define ALT_MODULE_CLASS_otg_hpi_reset altera_avalon_pio
-#define OTG_HPI_RESET_BASE 0x30
+#define OTG_HPI_RESET_BASE 0x50
 #define OTG_HPI_RESET_BIT_CLEARING_EDGE_REGISTER 0
 #define OTG_HPI_RESET_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define OTG_HPI_RESET_CAPTURE 0
@@ -404,7 +458,7 @@
  */
 
 #define ALT_MODULE_CLASS_otg_hpi_w altera_avalon_pio
-#define OTG_HPI_W_BASE 0x50
+#define OTG_HPI_W_BASE 0x70
 #define OTG_HPI_W_BIT_CLEARING_EDGE_REGISTER 0
 #define OTG_HPI_W_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define OTG_HPI_W_CAPTURE 0
@@ -470,7 +524,7 @@
  */
 
 #define ALT_MODULE_CLASS_sdram_pll altpll
-#define SDRAM_PLL_BASE 0x90
+#define SDRAM_PLL_BASE 0xb0
 #define SDRAM_PLL_IRQ -1
 #define SDRAM_PLL_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SDRAM_PLL_NAME "/dev/sdram_pll"
@@ -484,13 +538,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0xb0
+#define SYSID_QSYS_0_BASE 0xc8
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1540360903
+#define SYSID_QSYS_0_TIMESTAMP 1544648907
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

@@ -1,5 +1,5 @@
 module game_logic (
-	input 			Clk, Reset,
+	input 			Clk, Reset, Restart,
 	input [9:0] 	pacman_x, pacman_y,
 	input [3:0]		adjacent_walls,
 	input [7:0] 	keyboard_direction,
@@ -9,12 +9,10 @@ module game_logic (
 	logic [2:0] direction_next, 
 					queued_keyboard_direction, 
 					queued_keyboard_direction_next;
-					
-//	logic is_wall;
-	
+						
 	always_ff @ (posedge Clk) begin		
-		if (Reset) begin
-			direction <= 3'b101;
+		if (Reset || Restart) begin
+			direction <= 3'b000;
 			queued_keyboard_direction <= 3'b000;
 		end else begin
 			direction <= direction_next;

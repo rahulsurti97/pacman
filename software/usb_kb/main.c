@@ -26,6 +26,39 @@
 #include "lcp_data.h"
 
 
+time_t t;
+
+int set_ghost_direction(){
+	int status = *ghost_status_base;
+//	printf("ghost_status: %04x\n", status);
+
+	int g[4];
+	g[0] = status & 0xF;
+	g[1] = (status & 0xF0) >> 4;
+	g[2] = (status & 0xF00) >> 8;
+	g[3] = (status & 0xF000) >> 12;
+
+	int r;
+
+	for (int i = 0; i < 4; i++) {
+
+		printf("g%d: %01x\n", i, g[i]);
+		r = (rand() % 4) + 4;
+
+		if (r % 2 == g[i] % 2) { // if same direction or backwards direction, regenerate once with 50% chance
+			if ((rand() % 4) < 3) {
+				r = (rand() % 4) + 4;
+			}
+		}
+
+		g[i] = r;
+	}
+
+	*ghost_direction_base = (g[3] << 12) | (g[2] << 8) | (g[1] << 4) | g[0];
+
+	return 0;
+}
+
 //----------------------------------------------------------------------------------------//
 //
 //                                Main function
@@ -33,6 +66,8 @@
 //----------------------------------------------------------------------------------------//
 int main(void)
 {
+	srand((unsigned) time(&t));
+
 	IO_init();
 
 	/*while(1)
@@ -520,6 +555,8 @@ int main(void)
 		// We only need the first keycode, which is at the lower byte of keycode.
 		// Send the keycode to hardware via PIO.
 		*keycode_base = keycode & 0xff; 
+//		printf("ghost_status: %04x\n", *ghost_status_base);
+		set_ghost_direction();
 
 		usleep(200);//usleep(5000);
 		usb_ctl_val = UsbRead(ctl_reg);

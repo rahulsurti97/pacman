@@ -19,7 +19,9 @@ module lab8_soc (
 	sdram_wire_dq,
 	sdram_wire_dqm,
 	sdram_wire_ras_n,
-	sdram_wire_we_n);	
+	sdram_wire_we_n,
+	ghost_direction_export_export,
+	ghost_status_export_export);	
 
 	input		clk_clk;
 	output	[7:0]	keycode_export;
@@ -41,4 +43,6 @@ module lab8_soc (
 	output	[1:0]	sdram_wire_dqm;
 	output		sdram_wire_ras_n;
 	output		sdram_wire_we_n;
+	output	[15:0]	ghost_direction_export_export;
+	input	[15:0]	ghost_status_export_export;
 endmodule
